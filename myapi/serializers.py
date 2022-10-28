@@ -4,4 +4,4 @@ from .models import MyProfile
 class MyProfileSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = MyProfile
-        fields = '__all__'
+        fields = ['slackUsername','backend','age','bio']
